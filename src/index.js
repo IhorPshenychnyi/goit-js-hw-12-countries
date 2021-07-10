@@ -75,3 +75,27 @@ function onClick(e) {
     
     refs.listBox.innerHTML = '';
 }
+
+window.addEventListener('keydown', onEnterKeyPress);
+
+function onEnterKeyPress(e) {
+    if (e.code === 'Enter') {
+        const text = e.target.textContent.trim();
+        
+        fetchCountries(text)
+        .then(renderCountryCard)
+        .catch(error => console.log(error))
+    
+    refs.listBox.innerHTML = '';
+    }
+}
+
+window.addEventListener('keydown', onEscKeyPress);
+
+function onEscKeyPress(e) {
+    if (e.code === 'Escape') {
+        refs.listBox.innerHTML = '';
+        refs.cardContainer.innerHTML = '';
+        refs.searchForm.value = '';
+    }
+}
