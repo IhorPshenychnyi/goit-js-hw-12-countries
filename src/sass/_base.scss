@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+  background-color: rgb(206, 186, 223);
+}
+
+h2,
+p {
+    margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 360px;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  padding: 15px;
+}
+
+a {
+    display: inline;
+    text-decoration: none;
+}
+
+.input-js,
+.input-box {
+    text-align: center;
+}
+
+.input-box {
+    padding-bottom: 40px;
+    padding-top: 20px;
+
+}
+
+.input-js {
+    width: 50%;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: larger;
+
+}
+
+.card {
+    display: flex;
+    align-items: center;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.js-card-container {
+    width: 720px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.card-text,
+.list-group-item {
+    font-weight: 400;
+  font-size: 28px;
+  line-height: 1.143;
+  margin-bottom: 20px;
+}
+
+.card-body {
+    margin-right: 30px;
+    width: 360px;
+}
+
+.countries-list {
+    list-style: none;
+}
+
+.countries-item {
+    color: #212121;
+    font-size: 20px;
+    line-height: 1.143;
+    margin-bottom: 10px;
+    &:hover {
+        color: #2196f3;
+    }
+}
